@@ -1,0 +1,52 @@
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.square .circle , .square .cross {
+  font-size: 80px;
+  font-weight: bold;
+
+}
+
+.square .circle {
+  color : blue;
+}
+
+.square .cross{
+ color : red;
+}
+
+.turn-message , .winning-message{
+  margin-top: 15px;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
